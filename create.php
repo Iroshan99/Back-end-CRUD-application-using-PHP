@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $stmt = $conn->prepare($sql);
     $stmt->execute(['name' => $name, 'email' => $email, 'age' => $age]);
 
-    echo "User added successfully!";
+    echo "User was added successfully!";
 }
 
 ?>
